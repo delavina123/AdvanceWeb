@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Advance Web</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	    
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="header" id="head">	
+      <div class="container"> 
+         <div class="header-top">
+      		 <div class="logo">
+				<a href="index.html"><img src="logo.png" alt=""/></a>
+			 </div>
+		   <div class="top-menu">
+		   	<span class="menu"> </span>
+			<ul>
+			 	<nav class="cl-effect-5">
+				<li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
+				<li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
+				<li><a href="#hobbies" class="scroll"><span data-hover="hobbies"><span>hobbies</span></a></li>
+				<li><a href="#contact" class="scroll"><span data-hover="contact">contact</span></a></li>
+				</nav>
+			 </ul>
+			 </div>
+			 <!--script-nav-->
+		 <script>
+		 $("span.menu").click(function(){
+		 $(".top-menu ul").slideToggle("slow" , function(){
+		 });
+		 });
+		 </script>
+			<div class="clearfix"></div>
+		 </div>  
+		  <div class="index-banner">
+       	   <div class="wmuSlider example1">
+			   <div class="wmuSliderWrapper">
+				   <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	<div class="banner-wrap">
+				   	       	<div class="banner_center">
+				   		 		<h1>hello world,</h1> 
+				   		 		<h2>i am <span>Nelly Jane</span></h2>
+				   		 		</div>
+				   		 </div>
+					</article>
+				   <article style="position: relative; width: 100%; opacity: 1;"> 
+				   	   	<div class="banner-wrap">
+				   	      <div class="banner_center">
+				   		 		<h1>Welcome</h1> 
+				   		 		<h2>to my <span>Website</span></h2>
+				   		 		</div>
+				   		  </div>
+				   </article>
+				   
+				 </div>
+				
+            </div>
+            <script src="js/jquery.wmuSlider.js"></script> 
+			  <script>
+       			$('.example1').wmuSlider();         
+   		     </script> 	           	      
+      </div>
+	 </div>     
+	</div>
+	<div class="content">
+		<div class="about-section" id="about" id="about">
+	<div class="container">
+		<div class="about-header">
+			<h3>about me</h3>
+			<div class="about-imag">
+			<img src="images/prof.jpg" alt=""/>
+			</div>
+			<div class="about-text">
+					<p>Hello!</p>
+					<p></p>I am Nelly Jane B. Dela Viña, 21 years of age. I live in Purok-1, Labo Ozamiz City. 
+					Currently studying at La Salle University a 3rd year college with the program of Bachelor 
+					Science in Information Technology.</p>
+					
+			</div>
+
+	<div class="hobbies">
+	<a href="#hobbies" class="scroll"></a>
+	</div>
+	</div>
+	</div>
+	<!-- about-section-ends -->
+	<div class="works-section" id="hobbies" id="hobbies">
+	   <div class="works-header">
+			<h3>My Hobbies</h3>
+				
+		</div>
+		<div class="portfolio-section-bottom-row" id="portfolio">
+			<div class="container">
+				
+						<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+					<script type="text/javascript">
+						$(document).ready(function () {
+							$('#horizontalTab').easyResponsiveTabs({
+								type: 'default', //Types: default, vertical, accordion           
+								width: 'auto', //auto or any width like 600px
+								fit: true   // 100% fit in a container
+							});
+						});
+						
+					</script>
+						<link rel="stylesheet" href="css/swipebox.css">
+							<script src="js/jquery.swipebox.min.js"></script> 
+								<script type="text/javascript">
+									jQuery(function($) {
+										$(".swipebox").swipebox();
+									});
+								</script>
+							<!-- Portfolio Ends Here -->
+						<div class="sap_tabs">
+							<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+								  <ul class="resp-tabs-list">
+									  <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span></span></li>
+									  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span></span></li>
+									  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span></span></li>
+									  <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span></span></li>
+									  <li class="resp-tab-item" aria-controls="tab_item-4" role="tab"><span></span></li>
+									  <div class="clearfix"></div>
+								  </ul>	
+								<div id="portfoliolist">
+									<div class="resp-tabs-container">
+										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+											<div class="tab_img">
+													<div class="col-md-3 img-top grid_box">
+														<a href="images/vb.jpeg" class="swipebox"  title="Volleyball">
+															  <img src="images/vb.jpeg" class="img-responsive" alt="">
+															
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="images/basketball.jpeg" class="swipebox"  title="Basketball">
+															  <img src="images/basketball.jpeg" class="img-responsive" alt="">
+															   
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="images/guitar.jpg" class="swipebox"  title="Playing Guitar">
+															  <img src="images/guitar.jpg" class="img-responsive" alt="">
+															   
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="images/watching movies.jpg" class="swipebox"  title="Watching Movies">
+															  <img src="images/watching movies.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													</div>
+													<div class="clearfix"></div>	
+											</div>
+																				 
+										</div>
+										
+ 
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer-section" id="contact" id="contact">
+			<div class="container"> 
+			<div class="contact-header">
+				<h3>contact me</h3>
+			</div>
+			<div class="social-icon">
+				<a href="#"><i class="icon1"></i></a>
+				<a href="#"><i class="icon2"></i></a>
+				<a href="#"><i class="icon3"></i></a>
+				<a href="#"><i class="icon4"></i></a>
+				
+			</div>
+			<div class="contact">
+				<form>
+					<div class="col-md-4 contactgrid">
+						<input type="text" class="text" value=" name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
+					</div>
+					<div class="col-md-4 contactgrid">
+						<input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
+					</div>
+					<div class="col-md-4 contactgrid">
+						<input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
+					</div>
+					<div class="col-md-8 contactgrid1">
+						<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+					</div>
+					<div class="col-md-4 contactgrid2">
+						<input type="submit" value="[send message]">
+					</div>
+				   <div class="clearfix"></div>
+				</form>
+			</div>
+		
+					<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+
+		</div>		
+	</div>
+	
+	
+</body>
+</html>
